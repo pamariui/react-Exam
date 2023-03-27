@@ -1,8 +1,12 @@
 import React from 'react'
+import './style.css'
+
 
 const Filters = () => {
   return (
-    <div></div>
+    <div className='filters'>
+        
+    </div>
   )
 }
 
