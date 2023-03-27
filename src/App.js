@@ -1,10 +1,21 @@
 import React from 'react'
+import { Route, Routes} from 'react-router-dom';
+import Header from './components/Header';
 
-function App() {
+
+import Homepage from './pages/Homepage';
+
+
+const  App = () => {
+
   return (
-    <div className="App">
-      
-    </div>
+    <> 
+      <Header/>
+      <Routes>
+       
+            <Route exact path='/'  element = {<Homepage/>}/>
+        </Routes>
+    </>
   );
 }
 
