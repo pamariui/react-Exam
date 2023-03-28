@@ -36,7 +36,7 @@ header {
     border-radius: 32px;
     box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.207);
 }
-span {
+.vertical {
     height: 20px;
     border-right: 1px solid #EBEBEB;
 }
@@ -119,3 +119,43 @@ span {
 .user:hover {
     box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.207);
 }
+
+.user-popup {
+    position: absolute;
+    top: 70px;
+    right: 80px;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 22px;
+    width: 250px;
+    box-shadow: 0px 4px 7px 1px #dddddd;
+  }
+  .user-popup ul {
+    padding: 12px 0;
+  }
+  .user-popup ul li {
+    width: 100%;
+    list-style: none;
+    padding: 10px;
+  }
+  .user-popup ul li:hover {
+    background-color: #EBEBEB;
+  }
+  .user-popup ul li a {
+    text-decoration: none;
+    width: 220px;
+    padding: 10px;
+    color: #666;
+  }
+  .user-popup ul li a:hover {
+    background-color: #EBEBEB;
+  }
+  .horizontal {
+    height: 10px;
+    width: 100%;
+    border-bottom: 1px solid #EBEBEB;
+    display: block;
+  }
+  .horizontal:hover {
+    background-color: white;
+  }

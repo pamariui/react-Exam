@@ -1,11 +1,17 @@
 import React from 'react'
-import './style.css'
+import { FaIcons } from 'react-icons/fa';
 
+import './style.css'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <footer>
+        <p>
+          
+        </p>
+        
+    </footer>
   )
 }
 
-export default Footer
+export default Footer;

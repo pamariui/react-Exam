@@ -1,0 +1,15 @@
+.filters {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100px;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.selected p{
+    color: #666666;
+    border-bottom:1px solid #666;
+}
+
+
