@@ -6,6 +6,7 @@ import * as TbIcons from "react-icons/tb";
 import * as BiIcons from "react-icons/bi";
 import * as VsIcons from "react-icons/vsc";
 import * as FaIcons from "react-icons/fa";
+import * as SlIcons from "react-icons/sl";
 
 export {
     FiIcons,
@@ -15,5 +16,6 @@ export {
     TbIcons,
     BiIcons,
     VsIcons,
-    FaIcons
+    FaIcons,
+    SlIcons
 }

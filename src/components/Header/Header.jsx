@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react'
 import './style.css'
 import { Link } from 'react-router-dom';
 
-import logo from '../../assets/logo.svg';
+import logo from '../../assets/airbnb-icon.svg';
 import { FiIcons, 
          HiIcons,
          IoIcons } from '../../utils/icons';
 
-const Header = () => {
+const Header = ({logoText, colorClass}) => {
 
     const [isPopupOpen, setIsPopupOpen] = useState(false);
     useEffect(() => {
@@ -30,9 +30,10 @@ const Header = () => {
     return (
         <header>
             <div className='header'>
-                <div className='logo' to={'/'}>
+                <div className={`logo ${colorClass}`} to={'/'}>
                     <Link  to={'/'} >
-                        <img src={logo} alt="" />
+                        <img src={logo} alt=""/>
+                        <p className='logo-text'>{logoText}</p>
                     </Link>
                 </div>
                 <div className='search-bar'>

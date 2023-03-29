@@ -1,10 +1,26 @@
 .card {
     display: flex;
     flex-direction: column;
-    width: 250px;
+    width: 280px;
     margin: 30px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 20px;
+    height: 350px;
 }
-img {
+.card img {
     height: 250px;
     object-fit: cover;
+    border-radius: 20px;
 }
+.card h4 {
+    padding: 10px;
+}
+.card p {
+    padding: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+    .card {
+      width: 80%;
+    }
+  }

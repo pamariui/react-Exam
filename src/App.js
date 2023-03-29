@@ -1,20 +1,18 @@
 import React from 'react'
 import { Route, Routes} from 'react-router-dom';
-import Filters from './components/Filters';
-import Header from './components/Header';
 
-
+//pages import
 import Homepage from './pages/Homepage';
+import Privacy from './pages/Privacy';
 
 
 const  App = () => {
 
   return (
     <> 
-      <Header/>
-      <Filters />
       <Routes>
             <Route exact path='/'  element = {<Homepage/>}/>
+            <Route exact path='/privacy'  element = {<Privacy/>}/>
         </Routes>
         
     </>
