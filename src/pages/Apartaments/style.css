@@ -1,0 +1,70 @@
+.container {
+    margin: 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left-side {
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.left-side img {
+    max-width: 100%; 
+    height: auto; 
+    margin: 0 auto;
+    
+}
+
+.right-side {
+    padding: 20px;
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.right-side h1 {
+    padding: 20px;
+    letter-spacing: 1.5px;
+}
+.price {
+    padding: 20px;
+}
+.price span{
+    font-weight: bold;
+}
+.location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.location h4 {
+    padding: 20px;
+    color: #8d8a8a66;
+}
+
+.location span {
+    font-weight: bolder;
+}
+@media only screen and (max-width: 1300px) {
+    .container {
+        flex-direction: column;
+    }
+    .left-side  {
+        width: 100%;
+        
+    }
+    
+    .right-side {
+        margin-top: 100px;
+        width: 100%;
+        bottom: 150px;
+    }
+  }

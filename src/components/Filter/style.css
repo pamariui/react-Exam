@@ -1,0 +1,27 @@
+.filter-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100px;
+    width: 100px;
+    color:#A5A5A5;
+    cursor: pointer;
+    margin:0 40px;
+}
+
+.filter-item:hover {
+    color: #666666;
+    transition: ease-in-out 0.3s;
+}
+.icon {
+  font-size:28px;  
+}
+
+.title {
+    padding-bottom: 10px;
+    white-space: nowrap;
+}
+.selected {
+    color: #666666;
+}

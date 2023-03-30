@@ -1,0 +1,28 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    height: 350px;
+}
+.card img {
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.card h4 {
+    padding: 10px;
+    color: #696969;
+}
+.card p {
+    padding: 10px;
+    color: #929292;
+}
+
+@media only screen and (min-width: 600px) {
+    .card {
+      width: 80%;
+    }
+  }
