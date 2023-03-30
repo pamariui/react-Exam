@@ -17,6 +17,7 @@ const Button = ({
         borderRadius: radius,
         border: border,
         color: color,
+        padding: padding
       };
   return (
     <button 

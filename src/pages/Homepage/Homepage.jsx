@@ -13,6 +13,7 @@ const Homepage = () => {
 
   const [apartament,setApartament] = useState(null);
   const [selectedFilter, setSelectedFilter] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   const getAllApartaments = async () => {
     let data = await getAppartaments();
@@ -20,13 +21,14 @@ const Homepage = () => {
       console.log(data);
     } else {
       setApartament(data);
+      setIsLoading(false);
     }
   }
 
   useEffect(() => {
     setTimeout(() => {
       getAllApartaments();
-    },1500)
+    },500)
   },[]);
 
   const filteredApartments = selectedFilter !== null ? apartament.filter(apartment => apartment.id === selectedFilter) : apartament;
@@ -42,18 +44,24 @@ const Homepage = () => {
       <Main>
         <div className='card-container'>
           {
-            
-              filteredApartments ?
-                filteredApartments.map((el,i) => {
-                  return (
-                    <Card 
+            filteredApartments && filteredApartments.length > 0 ?
+              filteredApartments.map((el,i) => {
+                return (
+                  <Card 
                     key={i} 
                     img={el.imageUrl} 
                     name={el.name} 
                     price={el.price} 
-                    currency= {el.priceCurrency}/>
-                  )
-                }) : <Spinner style={{backgroundColor: 'red'}}/>
+                    currency= {el.priceCurrency}
+                    id={el.id}
+                  />
+                )
+              }) : isLoading ?
+                  <Spinner style={{backgroundColor: 'red'}}/> :
+                  <div className='sad'>
+                    <img src='https://img.freepik.com/premium-vector/cute-sad-cat-sitting-rain-cloud-cartoon-vector-icon-illustration-animal-nature-icon-isolated_138676-5215.jpg?w=2000'  className='sad-cat' alt='sad siting cat'/>
+                    <p>No results found.</p>
+                  </div>
           }
         </div>
       </Main>

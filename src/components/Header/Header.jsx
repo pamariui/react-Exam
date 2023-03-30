@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import './style.css'
 import { Link } from 'react-router-dom';
 
+import './style.css'
 import logo from '../../assets/airbnb-icon.svg';
 import { FiIcons, 
          HiIcons,
@@ -10,6 +10,7 @@ import { FiIcons,
 const Header = ({logoText, colorClass}) => {
 
     const [isPopupOpen, setIsPopupOpen] = useState(false);
+
     useEffect(() => {
         const handleClickOutside = (event) => {
           const headerElement = document.querySelector("header");
@@ -76,7 +77,7 @@ const Header = ({logoText, colorClass}) => {
                                     <a href="/">Host an experience</a>
                                 </li>
                                 <li>
-                                    <a href="/">Help</a>
+                                    <a href="/privacy">Help</a>
                                 </li>
                             </ul>                           
                         </div>

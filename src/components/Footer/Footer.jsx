@@ -1,9 +1,11 @@
 import React, { useState} from 'react'
 import { Link } from 'react-router-dom';
-import { BiIcons, FaIcons, IoIcons, SlIcons } from '../../utils/icons';
+
 import { footerLinks } from './footer-link';
-
-
+import {  BiIcons, 
+          FaIcons, 
+          IoIcons, 
+          SlIcons } from '../../utils/icons';
 import './style.css'
 
 const Footer = ({copyright}) => {
